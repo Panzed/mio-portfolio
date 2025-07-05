@@ -1,5 +1,7 @@
 import React from "react";
 import {ConfigProvider} from "antd";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
 import "./App.css";
 
 // Configurazione tema AntD
@@ -15,8 +17,30 @@ function App() {
   return (
     <ConfigProvider theme={theme}>
       <div className="App">
-        <h1>Il Mio Portfolio</h1>
-        <p>Setup completato! Ora iniziamo a costruire...</p>
+        <Header />
+        <Hero />
+
+        {/* Sezioni temporanee per testare il menu */}
+        <div
+          id="about"
+          style={{height: "100vh", background: "#f5f5f5", display: "flex", alignItems: "center", justifyContent: "center"}}>
+          <h2>Sezione Chi Sono</h2>
+        </div>
+        <div
+          id="projects"
+          style={{height: "100vh", background: "#e6f7ff", display: "flex", alignItems: "center", justifyContent: "center"}}>
+          <h2>Sezione Progetti</h2>
+        </div>
+        <div
+          id="skills"
+          style={{height: "100vh", background: "#f6ffed", display: "flex", alignItems: "center", justifyContent: "center"}}>
+          <h2>Sezione Competenze</h2>
+        </div>
+        <div
+          id="contact"
+          style={{height: "100vh", background: "#fff2e8", display: "flex", alignItems: "center", justifyContent: "center"}}>
+          <h2>Sezione Contatti</h2>
+        </div>
       </div>
     </ConfigProvider>
   );
