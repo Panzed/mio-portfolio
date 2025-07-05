@@ -2,6 +2,8 @@ import React from "react";
 import {ConfigProvider} from "antd";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 import "./App.css";
 
 // Configurazione tema AntD
@@ -19,18 +21,10 @@ function App() {
       <div className="App">
         <Header />
         <Hero />
+        <About />
+        <Projects />
 
         {/* Sezioni temporanee per testare il menu */}
-        <div
-          id="about"
-          style={{height: "100vh", background: "#f5f5f5", display: "flex", alignItems: "center", justifyContent: "center"}}>
-          <h2>Sezione Chi Sono</h2>
-        </div>
-        <div
-          id="projects"
-          style={{height: "100vh", background: "#e6f7ff", display: "flex", alignItems: "center", justifyContent: "center"}}>
-          <h2>Sezione Progetti</h2>
-        </div>
         <div
           id="skills"
           style={{height: "100vh", background: "#f6ffed", display: "flex", alignItems: "center", justifyContent: "center"}}>

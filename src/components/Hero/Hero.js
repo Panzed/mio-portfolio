@@ -51,7 +51,7 @@ const Hero = () => {
 
           {/* Nome principale */}
           <Title level={1} className="hero-name">
-            Il Tuo Nome
+            Matteo Pasquinoni
           </Title>
 
           {/* Ruolo dinamico */}

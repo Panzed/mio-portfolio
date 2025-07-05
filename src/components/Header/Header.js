@@ -77,7 +77,7 @@ const Header = () => {
         <div className="header-content">
           {/* Logo/Nome */}
           <div className="logo">
-            <h2>Il Tuo Nome</h2>
+            <h2>Matteo</h2>
             <span>React Developer</span>
           </div>
 
